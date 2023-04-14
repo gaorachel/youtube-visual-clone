@@ -1,0 +1,15 @@
+.button {
+  background-color: black;
+  color: white;
+}
+
+.full-rounded {
+  border-radius: 50%;
+}
+.quater-rounded {
+  border-radius: 25%;
+}
+
+.img-shadow {
+  background-color: #272727;
+}
