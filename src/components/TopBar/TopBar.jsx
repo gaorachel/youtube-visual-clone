@@ -23,27 +23,35 @@ export function TopBar() {
       <MenuBotton></MenuBotton>
       <MenuAvatarBotton></MenuAvatarBotton> */}
 
-      <button className={styles.topBarMenuButton}>
-        <MenuLogo style={iconStyle} />
-      </button>
-      <YoutubeLogo
-        style={{
-          fill: "#FFFFFF",
-          width: 90,
-          height: 20,
-        }}
-      />
-      <SearchBox />
-      <button className={styles.topBarMenuButton}>
-        <MicLogo style={iconStyle} />
-      </button>
-      <button className={styles.topBarMenuButton}>
-        <CameraLogo style={iconStyle} />
-      </button>
-      <button className={styles.topBarMenuButton}>
-        <NotificationLogo style={iconStyle} />
-      </button>
-      <button className={styles.avaterButton}>R</button>
+      <div className={styles.leftPosition}>
+        <button className={styles.topBarMenuButton}>
+          <MenuLogo style={iconStyle} />
+        </button>
+        <YoutubeLogo
+          style={{
+            fill: "#FFFFFF",
+            width: 90,
+            height: 20,
+          }}
+        />
+      </div>
+
+      <div className={styles.centrePosition}>
+        <SearchBox />
+        <button className={styles.topBarMenuButton}>
+          <MicLogo style={iconStyle} />
+        </button>
+      </div>
+
+      <div className={styles.rightPosition}>
+        <button className={styles.topBarMenuButton}>
+          <CameraLogo style={iconStyle} />
+        </button>
+        <button className={styles.topBarMenuButton}>
+          <NotificationLogo style={iconStyle} />
+        </button>
+        <button className={styles.avaterButton}>R</button>
+      </div>
     </div>
   );
 }

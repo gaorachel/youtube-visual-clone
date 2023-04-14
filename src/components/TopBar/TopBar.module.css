@@ -1,8 +1,8 @@
 .topBar {
   display: flex;
-  padding: 8px;
+  padding: 8px 16px;
   gap: 5px;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -21,4 +21,22 @@
   width: 32px;
   height: 32px;
   color: white;
+}
+
+.leftPosition {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.centrePosition {
+  display: flex;
+  align-items: center;
+  gap: 8.5px;
+}
+
+.rightPosition {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
