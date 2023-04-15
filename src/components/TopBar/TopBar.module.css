@@ -54,7 +54,6 @@
 .leftPosition {
   display: flex;
   align-items: center;
-  /* gap: 16px; */
 }
 
 .centrePosition {
@@ -66,5 +65,4 @@
 .rightPosition {
   display: flex;
   align-items: center;
-  gap: 16px;
 }
