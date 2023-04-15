@@ -1,10 +1,11 @@
 import styles from "./TopBar.module.css";
-import { ReactComponent as MenuLogo } from "./svg/menu.svg";
+import { ReactComponent as MenuIcon } from "./svg/menu.svg";
 import { ReactComponent as YoutubeLogo } from "./svg/youtube.svg";
-import { ReactComponent as MicLogo } from "./svg/mic.svg";
-import { ReactComponent as CameraLogo } from "./svg/camera.svg";
-import { ReactComponent as NotificationLogo } from "./svg/notifications.svg";
+import { ReactComponent as MicIcon } from "./svg/mic.svg";
+import { ReactComponent as CameraIcon } from "./svg/camera.svg";
+import { ReactComponent as NotificationIcon } from "./svg/notifications.svg";
 import { SearchBox } from "./SearchBox/SearchBox";
+import classNames from "classnames";
 
 const iconStyle = {
   fill: "#FFFFFF",
@@ -15,17 +16,9 @@ const iconStyle = {
 export function TopBar() {
   return (
     <div className={styles.topBar}>
-      {/* <MenuBotton></MenuBotton>
-      <Logo />
-      <SearchBox />
-      <MenuBotton></MenuBotton>
-      <MenuBotton></MenuBotton>
-      <MenuBotton></MenuBotton>
-      <MenuAvatarBotton></MenuAvatarBotton> */}
-
-      <div className={styles.leftPosition}>
-        <button className={styles.topBarMenuButton}>
-          <MenuLogo style={iconStyle} />
+      <div className={styles.centrePosition}>
+        <button className={styles.topBarButton}>
+          <MenuIcon style={iconStyle} />
         </button>
         <YoutubeLogo
           style={{
@@ -37,21 +30,21 @@ export function TopBar() {
         <span className={styles.countryCode}> GB </span>
       </div>
 
-      <div className={styles.centrePosition}>
+      <div className={classNames(styles.centrePosition, "gap: 100px")}>
         <SearchBox />
-        <button className={styles.micButton}>
-          <MicLogo style={iconStyle} />
+        <button className={classNames(styles.topBarButton, styles.micButton)}>
+          <MicIcon style={iconStyle} />
         </button>
       </div>
 
-      <div className={styles.rightPosition}>
-        <button className={styles.topBarMenuButton}>
-          <CameraLogo style={iconStyle} />
+      <div className={styles.centrePosition}>
+        <button className={styles.topBarButton}>
+          <CameraIcon style={iconStyle} />
         </button>
-        <button className={styles.topBarMenuButton}>
-          <NotificationLogo style={iconStyle} />
+        <button className={styles.topBarButton}>
+          <NotificationIcon style={iconStyle} />
         </button>
-        <button className={styles.avaterButton}>R</button>
+        <button className={classNames(styles.topBarButton, styles.avaterButton)}>R</button>
       </div>
     </div>
   );

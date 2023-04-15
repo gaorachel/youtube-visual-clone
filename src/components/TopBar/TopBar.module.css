@@ -1,9 +1,13 @@
 .topBar {
   display: flex;
   padding: 8px 16px;
-  gap: 5px;
   justify-content: space-between;
+}
+
+.centrePosition {
+  display: flex;
   align-items: center;
+  gap: 16px;
 }
 
 .countryCode {
@@ -11,29 +15,23 @@
   align-self: self-start;
   color: #aaaaaa;
   font-size: 10px;
-  font-family: Roboto, Arial, sans-serif;
 }
 
-.topBarMenuButton {
+.topBarButton {
   border: none;
   border-radius: 50%;
   background-color: transparent;
   width: 38px;
   height: 38px;
-  margin-right: 16px;
 }
 
-.topBarMenuButton:hover {
+.topBarButton:hover {
   background-color: #222222;
 }
 
 .micButton {
-  border: none;
-  border-radius: 50%;
   background-color: #181818;
-  width: 38px;
-  height: 38px;
-  margin-right: 16px;
+  margin-left: -8.5px;
 }
 
 .micButton:hover {
@@ -41,28 +39,10 @@
 }
 
 .avaterButton {
-  border: none;
-  border-radius: 50%;
   background-color: #7e57c2;
   width: 32px;
   height: 32px;
   color: white;
-  font-family: Arial;
-  font-size: 13.3333px;
-}
-
-.leftPosition {
-  display: flex;
-  align-items: center;
-}
-
-.centrePosition {
-  display: flex;
-  align-items: center;
-  gap: 8.5px;
-}
-
-.rightPosition {
-  display: flex;
-  align-items: center;
+  font-size: 15px;
+  margin-right: 20px;
 }
