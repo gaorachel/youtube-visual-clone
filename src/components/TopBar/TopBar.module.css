@@ -6,12 +6,38 @@
   align-items: center;
 }
 
+.countryCode {
+  display: flex;
+  align-self: self-start;
+  color: #aaaaaa;
+  font-size: 10px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
 .topBarMenuButton {
   border: none;
   border-radius: 50%;
-  background-color: #272727;
+  background-color: transparent;
   width: 38px;
   height: 38px;
+  margin-right: 16px;
+}
+
+.topBarMenuButton:hover {
+  background-color: #222222;
+}
+
+.micButton {
+  border: none;
+  border-radius: 50%;
+  background-color: #181818;
+  width: 38px;
+  height: 38px;
+  margin-right: 16px;
+}
+
+.micButton:hover {
+  background-color: #272727;
 }
 
 .avaterButton {
@@ -21,12 +47,14 @@
   width: 32px;
   height: 32px;
   color: white;
+  font-family: Arial;
+  font-size: 13.3333px;
 }
 
 .leftPosition {
   display: flex;
   align-items: center;
-  gap: 16px;
+  /* gap: 16px; */
 }
 
 .centrePosition {

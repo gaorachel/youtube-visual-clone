@@ -34,11 +34,12 @@ export function TopBar() {
             height: 20,
           }}
         />
+        <span className={styles.countryCode}> GB </span>
       </div>
 
       <div className={styles.centrePosition}>
         <SearchBox />
-        <button className={styles.topBarMenuButton}>
+        <button className={styles.micButton}>
           <MicLogo style={iconStyle} />
         </button>
       </div>
