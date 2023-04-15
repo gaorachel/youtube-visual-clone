@@ -30,7 +30,7 @@ export function TopBar() {
         <span className={styles.countryCode}> GB </span>
       </div>
 
-      <div className={classNames(styles.centrePosition, "gap: 100px")}>
+      <div className={classNames(styles.centrePosition)}>
         <SearchBox />
         <button className={classNames(styles.topBarButton, styles.micButton)}>
           <MicIcon style={iconStyle} />
