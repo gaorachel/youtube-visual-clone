@@ -30,6 +30,7 @@
 .navIcon {
   margin-right: 12px;
   stroke: var(--text-white);
+  stroke-width: 0.8px;
 }
 
 .navText {
