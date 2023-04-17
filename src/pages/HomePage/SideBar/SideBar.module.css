@@ -31,12 +31,13 @@
 
 .navBox:hover {
   background-color: var(--light-hover-gray);
+  fill: white;
 }
 
 .navIcon {
   margin-right: 12px;
-  stroke: var(--text-white);
-  stroke-width: 0.8px;
+  /* stroke: var(--text-white);
+  stroke-width: 0.8px; */
 }
 
 .navText {
