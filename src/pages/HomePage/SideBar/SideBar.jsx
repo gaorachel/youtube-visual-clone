@@ -17,7 +17,14 @@ import { ReactComponent as NewsIcon } from "./svg/news.svg";
 import { ReactComponent as SportIcon } from "./svg/sport.svg";
 import { ReactComponent as LearningIcon } from "./svg/learning.svg";
 import { ReactComponent as FashionAndBeautyIcon } from "./svg/fashionAndBeauty.svg";
-
+import { ReactComponent as YoutubePremiumIcon } from "./svg/ytPremium.svg";
+import { ReactComponent as YoutubeStudioIcon } from "./svg/ytStudio.svg";
+import { ReactComponent as YoutubeMusicIcon } from "./svg/ytMusic.svg";
+import { ReactComponent as YoutubeKidsIcon } from "./svg/ytKids.svg";
+import { ReactComponent as SettingsIcon } from "./svg/settings.svg";
+import { ReactComponent as ReportHistoryIcon } from "./svg/reportHistory.svg";
+import { ReactComponent as HelpIcon } from "./svg/help.svg";
+import { ReactComponent as SendFeedbackIcon } from "./svg/sendFeedback.svg";
 import classNames from "classnames";
 
 const link = "https://www.youtube.com/";
@@ -163,6 +170,105 @@ export function SideBar() {
 
       <div className={styles.navSection}>
         <div className={styles.sectionHeader}>More from YouTube</div>
+        <div className={styles.navBox}>
+          <YoutubePremiumIcon className={styles.navIcon} style={iconStyle} />
+          <a href={link} className={styles.navText}>
+            YouTube Premium
+          </a>
+        </div>
+        <div className={styles.navBox}>
+          <YoutubeStudioIcon className={styles.navIcon} style={iconStyle} />
+          <a href={link} className={styles.navText}>
+            YouTube Studio
+          </a>
+        </div>
+        <div className={styles.navBox}>
+          <YoutubeMusicIcon className={styles.navIcon} style={iconStyle} />
+          <a href={link} className={styles.navText}>
+            YouTube Music
+          </a>
+        </div>
+        <div className={styles.navBox}>
+          <YoutubeKidsIcon className={styles.navIcon} style={iconStyle} />
+          <a href={link} className={styles.navText}>
+            YouTube Kids
+          </a>
+        </div>
+      </div>
+
+      <div className={styles.navSection}>
+        <div className={styles.navBox}>
+          <SettingsIcon className={styles.navIcon} style={iconStyle} />
+          <a href={link} className={styles.navText}>
+            Settings
+          </a>
+        </div>
+        <div className={styles.navBox}>
+          <ReportHistoryIcon className={styles.navIcon} style={iconStyle} />
+          <a href={link} className={styles.navText}>
+            Report History
+          </a>
+        </div>
+        <div className={styles.navBox}>
+          <HelpIcon className={styles.navIcon} style={iconStyle} />
+          <a href={link} className={styles.navText}>
+            Help
+          </a>
+        </div>
+        <div className={styles.navBox}>
+          <SendFeedbackIcon className={styles.navIcon} style={iconStyle} />
+          <a href={link} className={styles.navText}>
+            Send Feedback
+          </a>
+        </div>
+      </div>
+
+      <div className={classNames(styles.navSection, styles.footerBox)}>
+        <a slot="" href="https://about.youtube/" className={styles.footerText}>
+          About
+        </a>
+        <a href="https://blog.youtube/" className={styles.footerText}>
+          Press
+        </a>
+        <a href="https://www.youtube.com/howyoutubeworks/policies/copyright/" className={styles.footerText}>
+          Copyright
+        </a>
+        <a href="https://www.youtube.com/t/contact_us/" className={styles.footerText}>
+          Contact Us
+        </a>
+        <a href="https://www.youtube.com/creators/" className={styles.footerText}>
+          Creator
+        </a>
+        <a href="https://www.youtube.com/ads/" className={styles.footerText}>
+          Advertise
+        </a>
+        <a href="https://developers.google.com/youtube" className={styles.footerText}>
+          Developers
+        </a>
+      </div>
+
+      <div className={classNames(styles.navSection, styles.footerBox)}>
+        <a slot="" href="https://www.youtube.com/t/terms" className={styles.footerText}>
+          Terms
+        </a>
+        <a href="https://policies.google.com/privacy?hl=en-GB" className={styles.footerText}>
+          Privacy
+        </a>
+        <a href="https://www.youtube.com/howyoutubeworks/policies/community-guidelines/" className={styles.footerText}>
+          Policy & Safety
+        </a>
+        <a
+          href="https://www.youtube.com/howyoutubeworks/?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen"
+          className={styles.footerText}
+        >
+          How YouTube works
+        </a>
+        <a href="https://www.youtube.com/new" className={styles.footerText}>
+          Test new features
+        </a>
+        <div className={styles.copyrightBox}>
+          <div className={styles.copyright}>© 2023 Google LLC</div>
+        </div>
       </div>
     </div>
   );

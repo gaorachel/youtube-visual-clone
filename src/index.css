@@ -10,7 +10,9 @@
   --dark-hover-gray: #222222;
   --light-hover-gray: #272727;
   --lighter-gray: #3f3f3f;
-  --text-white: #f1f1f1;
+  --text-white: #fff;
+  --text-secondary: #aaa;
+  --text-disabled: #717171;
 }
 
 body {
@@ -27,5 +29,5 @@ body {
 }
 
 .ty-icon {
-  animation-fill-mode: backwards;
+  /* animation-fill-mode: backwards; */
 }
