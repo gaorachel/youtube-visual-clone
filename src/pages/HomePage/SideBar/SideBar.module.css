@@ -74,10 +74,9 @@
 
 .copyright {
   display: inline;
-  direction: ltr;
-  unicode-bidi: isolate;
   color: var(--text-disabled);
   font-size: 0.8rem;
   padding: auto;
   margin: 12px 0px 12px 0px;
+  text-decoration: line-through;
 }

@@ -262,7 +262,7 @@ export function SideBar() {
           Test new features
         </a>
         <div className={styles.copyrightBox}>
-          <div className={styles.copyright}>© 2023 Google LLC</div>
+          <div className={styles.copyright}>© 2023 Google LLC (fake)</div>
         </div>
       </div>
     </div>
