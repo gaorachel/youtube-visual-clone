@@ -7,18 +7,12 @@ import { ReactComponent as NotificationIcon } from "./svg/notifications.svg";
 import { SearchBox } from "./SearchBox/SearchBox";
 import classNames from "classnames";
 
-const iconStyle = {
-  fill: "#FFFFFF",
-  width: 24,
-  height: 24,
-};
-
 export function TopBar() {
   return (
     <div className={styles.topBar}>
       <div className={styles.centrePosition}>
         <button className={styles.topBarButton} aria-label="menu">
-          <MenuIcon style={iconStyle} />
+          <MenuIcon className={styles.topBarIcon} />
         </button>
         <YoutubeLogo />
         <span className={styles.countryCode}> GB </span>
@@ -27,16 +21,16 @@ export function TopBar() {
       <div className={styles.centrePosition}>
         <SearchBox />
         <button className={classNames(styles.topBarButton, styles.micButton)} aria-label="create a video">
-          <MicIcon style={iconStyle} />
+          <MicIcon className={styles.topBarIcon} />
         </button>
       </div>
 
       <div className={styles.centrePosition}>
         <button className={styles.topBarButton} aria-label="search with your voice">
-          <CameraIcon style={iconStyle} />
+          <CameraIcon className={styles.topBarIcon} />
         </button>
         <button className={styles.topBarButton} aria-label="notifications">
-          <NotificationIcon style={iconStyle} />
+          <NotificationIcon className={styles.topBarIcon} />
         </button>
         <button className={classNames(styles.topBarButton, styles.avatarButton)} aria-label="avatar">
           R

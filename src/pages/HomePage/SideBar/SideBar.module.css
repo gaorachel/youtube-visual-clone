@@ -38,11 +38,12 @@
 
 .navBox:hover {
   background-color: var(--light-hover-gray);
-  fill: white;
 }
 
 .navIcon {
   margin-right: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .navText {

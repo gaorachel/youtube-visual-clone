@@ -37,31 +37,26 @@ const link = "https://www.youtube.com/";
 //   return <div>Icon</div>;
 // };
 
-const iconStyle = {
-  width: 24,
-  height: 24,
-};
-
 export function SideBar() {
   return (
     <div className={styles.sideBar}>
       <div className={styles.navSection}>
         <div className={styles.navBox}>
-          <HomeIcon className={styles.navIcon} style={iconStyle} />
+          <HomeIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Home
           </a>
         </div>
 
         <div className={styles.navBox}>
-          <ShortsLogo className={styles.navIcon} style={iconStyle} />
+          <ShortsLogo className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Shorts
           </a>
         </div>
 
         <div className={styles.navBox}>
-          <SubscriptionIcon className={styles.navIcon} style={iconStyle} />
+          <SubscriptionIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Subscriptions
           </a>
@@ -70,37 +65,37 @@ export function SideBar() {
 
       <div className={styles.navSection}>
         <div className={styles.navBox}>
-          <LibraryIcon className={styles.navIcon} style={iconStyle} />
+          <LibraryIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Library
           </a>
         </div>
         <div className={styles.navBox}>
-          <HistoryIcon className={styles.navIcon} style={iconStyle} />
+          <HistoryIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             History
           </a>
         </div>
         <div className={styles.navBox}>
-          <YourVideoIcon className={styles.navIcon} style={iconStyle} />
+          <YourVideoIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Your Videos
           </a>
         </div>
         <div className={styles.navBox}>
-          <WatchLaterIcon className={styles.navIcon} style={iconStyle} />
+          <WatchLaterIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Watch Later
           </a>
         </div>
         <div className={styles.navBox}>
-          <PlayListIcon className={styles.navIcon} style={iconStyle} />
+          <PlayListIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Play List
           </a>
         </div>
         <div className={styles.navBox}>
-          <LikedVideoIcon className={styles.navIcon} style={iconStyle} />
+          <LikedVideoIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Liked Videos
           </a>
@@ -113,55 +108,55 @@ export function SideBar() {
       <div className={styles.navSection}>
         <div className={styles.sectionHeader}>Explore</div>
         <div className={styles.navBox}>
-          <TrendingIcon className={styles.navIcon} style={iconStyle} />
+          <TrendingIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Trending
           </a>
         </div>
         <div className={styles.navBox}>
-          <MusicIcon className={styles.navIcon} style={iconStyle} />
+          <MusicIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Music
           </a>
         </div>
         <div className={styles.navBox}>
-          <MoviesAndShowsIcon className={styles.navIcon} style={iconStyle} />
+          <MoviesAndShowsIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Movies & shows
           </a>
         </div>
         <div className={styles.navBox}>
-          <LiveIcon className={styles.navIcon} style={iconStyle} />
+          <LiveIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Live
           </a>
         </div>
         <div className={styles.navBox}>
-          <GamingIcon className={styles.navIcon} style={iconStyle} />
+          <GamingIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Gaming
           </a>
         </div>
         <div className={styles.navBox}>
-          <NewsIcon className={styles.navIcon} style={iconStyle} />
+          <NewsIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             News
           </a>
         </div>
         <div className={styles.navBox}>
-          <SportIcon className={styles.navIcon} style={iconStyle} />
+          <SportIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Sport
           </a>
         </div>
         <div className={styles.navBox}>
-          <LearningIcon className={styles.navIcon} style={iconStyle} />
+          <LearningIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Learning
           </a>
         </div>
         <div className={styles.navBox}>
-          <FashionAndBeautyIcon className={styles.navIcon} style={iconStyle} />
+          <FashionAndBeautyIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Fashion & Beauty
           </a>
@@ -171,25 +166,25 @@ export function SideBar() {
       <div className={styles.navSection}>
         <div className={styles.sectionHeader}>More from YouTube</div>
         <div className={styles.navBox}>
-          <YoutubePremiumIcon className={styles.navIcon} style={iconStyle} />
+          <YoutubePremiumIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             YouTube Premium
           </a>
         </div>
         <div className={styles.navBox}>
-          <YoutubeStudioIcon className={styles.navIcon} style={iconStyle} />
+          <YoutubeStudioIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             YouTube Studio
           </a>
         </div>
         <div className={styles.navBox}>
-          <YoutubeMusicIcon className={styles.navIcon} style={iconStyle} />
+          <YoutubeMusicIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             YouTube Music
           </a>
         </div>
         <div className={styles.navBox}>
-          <YoutubeKidsIcon className={styles.navIcon} style={iconStyle} />
+          <YoutubeKidsIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             YouTube Kids
           </a>
@@ -198,25 +193,25 @@ export function SideBar() {
 
       <div className={styles.navSection}>
         <div className={styles.navBox}>
-          <SettingsIcon className={styles.navIcon} style={iconStyle} />
+          <SettingsIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Settings
           </a>
         </div>
         <div className={styles.navBox}>
-          <ReportHistoryIcon className={styles.navIcon} style={iconStyle} />
+          <ReportHistoryIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Report History
           </a>
         </div>
         <div className={styles.navBox}>
-          <HelpIcon className={styles.navIcon} style={iconStyle} />
+          <HelpIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Help
           </a>
         </div>
         <div className={styles.navBox}>
-          <SendFeedbackIcon className={styles.navIcon} style={iconStyle} />
+          <SendFeedbackIcon className={styles.navIcon} />
           <a href={link} className={styles.navText}>
             Send Feedback
           </a>
