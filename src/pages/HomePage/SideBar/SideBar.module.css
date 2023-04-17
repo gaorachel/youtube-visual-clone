@@ -8,13 +8,15 @@
 }
 
 .navSection {
-  border-bottom: 0.5px solid var(--lighter-gray);
-  margin-bottom: 12px;
-  padding: 12px;
+  border-bottom: 1px solid var(--lighter-gray);
+  padding: 12px 12px;
 }
 
 .sectionHeader {
   font-size: 16px;
+  padding: 6px 12px 4px 12px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .navBox {
@@ -23,7 +25,7 @@
   justify-content: flex-start;
   align-items: center;
   border-radius: 12px;
-  padding: 10px;
+  padding: 12px;
   gap: 12px;
   width: 200px;
   height: 24px;
@@ -36,12 +38,9 @@
 
 .navIcon {
   margin-right: 12px;
-  /* stroke: var(--text-white);
-  stroke-width: 0.8px; */
 }
 
 .navText {
-  /* margin-right: 24px; */
   text-decoration: none;
   color: var(--text-white);
   font-size: 14px;

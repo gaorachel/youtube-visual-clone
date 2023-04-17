@@ -160,6 +160,10 @@ export function SideBar() {
           </a>
         </div>
       </div>
+
+      <div className={styles.navSection}>
+        <div className={styles.sectionHeader}>More from YouTube</div>
+      </div>
     </div>
   );
 }
