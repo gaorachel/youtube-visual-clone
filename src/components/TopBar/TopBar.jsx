@@ -1,10 +1,11 @@
 import styles from "./TopBar.module.css";
-import { ReactComponent as MenuLogo } from "./svg/menu.svg";
+import { ReactComponent as MenuIcon } from "./svg/menu.svg";
 import { ReactComponent as YoutubeLogo } from "./svg/youtube.svg";
-import { ReactComponent as MicLogo } from "./svg/mic.svg";
-import { ReactComponent as CameraLogo } from "./svg/camera.svg";
-import { ReactComponent as NotificationLogo } from "./svg/notifications.svg";
+import { ReactComponent as MicIcon } from "./svg/mic.svg";
+import { ReactComponent as CameraIcon } from "./svg/camera.svg";
+import { ReactComponent as NotificationIcon } from "./svg/notifications.svg";
 import { SearchBox } from "./SearchBox/SearchBox";
+import classNames from "classnames";
 
 const iconStyle = {
   fill: "#FFFFFF",
@@ -15,35 +16,32 @@ const iconStyle = {
 export function TopBar() {
   return (
     <div className={styles.topBar}>
-      {/* <MenuBotton></MenuBotton>
-      <Logo />
-      <SearchBox />
-      <MenuBotton></MenuBotton>
-      <MenuBotton></MenuBotton>
-      <MenuBotton></MenuBotton>
-      <MenuAvatarBotton></MenuAvatarBotton> */}
+      <div className={styles.centrePosition}>
+        <button className={styles.topBarButton} aria-label="menu">
+          <MenuIcon style={iconStyle} />
+        </button>
+        <YoutubeLogo />
+        <span className={styles.countryCode}> GB </span>
+      </div>
 
-      <button className={styles.topBarMenuButton}>
-        <MenuLogo style={iconStyle} />
-      </button>
-      <YoutubeLogo
-        style={{
-          fill: "#FFFFFF",
-          width: 90,
-          height: 20,
-        }}
-      />
-      <SearchBox />
-      <button className={styles.topBarMenuButton}>
-        <MicLogo style={iconStyle} />
-      </button>
-      <button className={styles.topBarMenuButton}>
-        <CameraLogo style={iconStyle} />
-      </button>
-      <button className={styles.topBarMenuButton}>
-        <NotificationLogo style={iconStyle} />
-      </button>
-      <button className={styles.avaterButton}>R</button>
+      <div className={styles.centrePosition}>
+        <SearchBox />
+        <button className={classNames(styles.topBarButton, styles.micButton)} aria-label="create a video">
+          <MicIcon style={iconStyle} />
+        </button>
+      </div>
+
+      <div className={styles.centrePosition}>
+        <button className={styles.topBarButton} aria-label="search with your voice">
+          <CameraIcon style={iconStyle} />
+        </button>
+        <button className={styles.topBarButton} aria-label="notifications">
+          <NotificationIcon style={iconStyle} />
+        </button>
+        <button className={classNames(styles.topBarButton, styles.avatarButton)} aria-label="avatar">
+          R
+        </button>
+      </div>
     </div>
   );
 }

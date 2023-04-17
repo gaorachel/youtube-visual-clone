@@ -1,22 +1,20 @@
 .searchBarButton {
-  border: none;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   width: 65px;
   height: 40px;
-  background-color: #222222;
+  background-color: var(--dark-hover-gray);
   border: 1px solid #333333;
 }
 
 .searchBar {
-  /* border: none; */
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   border: 1px solid #333333;
-  background-color: #0f0f0f;
+  background-color: var(--bg-black);
   padding-left: 15px;
-  width: 400px;
-  height: 36px;
+  width: 520px;
+  height: 38px;
   font-size: medium;
 }
 

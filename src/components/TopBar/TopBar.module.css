@@ -1,24 +1,48 @@
 .topBar {
   display: flex;
-  padding: 8px;
-  gap: 5px;
-  /* justify-content: space-between; */
-  align-items: center;
+  padding: 8px 16px;
+  justify-content: space-between;
 }
 
-.topBarMenuButton {
+.centrePosition {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.countryCode {
+  align-self: self-start;
+  color: #aaaaaa;
+  font-size: 10px;
+  margin-left: -12px;
+}
+
+.topBarButton {
   border: none;
   border-radius: 50%;
-  background-color: #272727;
+  background-color: transparent;
   width: 38px;
   height: 38px;
 }
 
-.avaterButton {
-  border: none;
-  border-radius: 50%;
+.topBarButton:hover {
+  background-color: var(--dark-hover-gray);
+}
+
+.micButton {
+  background-color: #181818;
+  margin-left: -8.5px;
+}
+
+.micButton:hover {
+  background-color: var(--light-hover-gray);
+}
+
+.avatarButton {
   background-color: #7e57c2;
   width: 32px;
   height: 32px;
   color: white;
+  font-size: 15px;
+  margin-right: 20px;
 }
