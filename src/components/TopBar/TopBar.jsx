@@ -17,34 +17,30 @@ export function TopBar() {
   return (
     <div className={styles.topBar}>
       <div className={styles.centrePosition}>
-        <button className={styles.topBarButton}>
+        <button className={styles.topBarButton} aria-label="menu">
           <MenuIcon style={iconStyle} />
         </button>
-        <YoutubeLogo
-          style={{
-            fill: "#FFFFFF",
-            width: 90,
-            height: 20,
-          }}
-        />
+        <YoutubeLogo />
         <span className={styles.countryCode}> GB </span>
       </div>
 
-      <div className={classNames(styles.centrePosition, "gap: 100px")}>
+      <div className={styles.centrePosition}>
         <SearchBox />
-        <button className={classNames(styles.topBarButton, styles.micButton)}>
+        <button className={classNames(styles.topBarButton, styles.micButton)} aria-label="create a video">
           <MicIcon style={iconStyle} />
         </button>
       </div>
 
       <div className={styles.centrePosition}>
-        <button className={styles.topBarButton}>
+        <button className={styles.topBarButton} aria-label="search with your voice">
           <CameraIcon style={iconStyle} />
         </button>
-        <button className={styles.topBarButton}>
+        <button className={styles.topBarButton} aria-label="notifications">
           <NotificationIcon style={iconStyle} />
         </button>
-        <button className={classNames(styles.topBarButton, styles.avaterButton)}>R</button>
+        <button className={classNames(styles.topBarButton, styles.avatarButton)} aria-label="avatar">
+          R
+        </button>
       </div>
     </div>
   );

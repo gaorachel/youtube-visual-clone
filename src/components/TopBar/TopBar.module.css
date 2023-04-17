@@ -11,7 +11,6 @@
 }
 
 .countryCode {
-  display: flex;
   align-self: self-start;
   color: #aaaaaa;
   font-size: 10px;
@@ -39,7 +38,7 @@
   background-color: var(--light-hover-gray);
 }
 
-.avaterButton {
+.avatarButton {
   background-color: #7e57c2;
   width: 32px;
   height: 32px;
