@@ -18,6 +18,11 @@
   font-size: medium;
 }
 
+.searchIcon {
+  width: 24px;
+  height: 24px;
+}
+
 .searchBox {
   display: flex;
 }
