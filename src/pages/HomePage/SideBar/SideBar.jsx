@@ -29,14 +29,6 @@ import classNames from "classnames";
 
 const link = "https://www.youtube.com/";
 
-// const Section = () => {
-//   return <div></div>;
-// };
-
-// const NavPane = (Icon) => {
-//   return <div>Icon</div>;
-// };
-
 export function SideBar() {
   return (
     <div className={styles.sideBar}>
@@ -219,7 +211,7 @@ export function SideBar() {
       </div>
 
       <div className={classNames(styles.navSection, styles.footerBox)}>
-        <a slot="" href="https://about.youtube/" className={styles.footerText}>
+        <a href="https://about.youtube/" className={styles.footerText}>
           About
         </a>
         <a href="https://blog.youtube/" className={styles.footerText}>
