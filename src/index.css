@@ -6,11 +6,24 @@
 
 :root {
   --bg-black: #0f0f0f;
+  --inactive-bg-black: #070707;
   --dark-hover-gray: #222222;
   --light-hover-gray: #272727;
   --lighter-gray: #3f3f3f;
+  --text-white: #fff;
+  --text-secondary: #aaa;
+  --text-disabled: #717171;
 }
 
 body {
-  background-color: var(--bg-black);
+  background-color: var(--inactive-bg-black);
+  color: var(--text-white);
+}
+
+.style-scope {
+  fill: white;
+}
+
+.ty-icon {
+  /* place holding */
 }

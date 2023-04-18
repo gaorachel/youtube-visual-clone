@@ -17,6 +17,12 @@
   margin-left: -12px;
 }
 
+.topBarIcon {
+  fill: "#FFFFFF";
+  width: 24px;
+  height: 24px;
+}
+
 .topBarButton {
   border: none;
   border-radius: 50%;
