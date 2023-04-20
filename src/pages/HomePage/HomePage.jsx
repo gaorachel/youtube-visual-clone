@@ -1,11 +1,19 @@
 import { TopBar } from "components/TopBar/TopBar";
 import { SideBar } from "./SideBar/SideBar";
+import React, { createContext, useContext, useState } from "react";
+
+export const SideBarContext = createContext(null);
 
 export function HomePage() {
+  const [sidebarExpanded, setSidebarExpanded] = useState(false);
+  // const SideBarContext = useContext(SideBarContext);
+
   return (
     <div>
-      <TopBar />
-      <SideBar />
+      <SideBarContext.Provider value={[sidebarExpanded, setSidebarExpanded]}>
+        <TopBar />
+        <SideBar />
+      </SideBarContext.Provider>
     </div>
   );
 }

@@ -26,10 +26,24 @@ import { ReactComponent as ReportHistoryIcon } from "./svg/reportHistory.svg";
 import { ReactComponent as HelpIcon } from "./svg/help.svg";
 import { ReactComponent as SendFeedbackIcon } from "./svg/sendFeedback.svg";
 import classNames from "classnames";
+import React, { useContext } from "react";
+import { SideBarContext } from "../HomePage";
 
 const link = "https://www.youtube.com/";
 
 export function SideBar() {
+  const [sidebarExpanded] = useContext(SideBarContext);
+
+  if (!sidebarExpanded)
+    return (
+      <div className={styles.sideBarCollapsed}>
+        <div>Home</div>
+        <div>Shorts</div>
+        <div>Subscriptions</div>
+        <div>Library</div>
+      </div>
+    );
+
   return (
     <div className={styles.sideBar}>
       <div className={styles.navSection}>
