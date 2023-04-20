@@ -6,13 +6,22 @@ import { ReactComponent as CameraIcon } from "./svg/camera.svg";
 import { ReactComponent as NotificationIcon } from "./svg/notifications.svg";
 import { SearchBox } from "./SearchBox/SearchBox";
 import classNames from "classnames";
+import React, { useContext } from "react";
+import { SideBarContext } from "pages/HomePage/HomePage";
 
 export function TopBar() {
+  const [sidebarExpanded, setSidebarExpanded] = useContext(SideBarContext);
+
   return (
     <div className={styles.topBar}>
       <div className={styles.centrePosition}>
         <button className={styles.topBarButton} aria-label="menu">
-          <MenuIcon className={styles.topBarIcon} />
+          <MenuIcon
+            onClick={() => {
+              setSidebarExpanded(!sidebarExpanded);
+            }}
+            className={styles.topBarIcon}
+          />
         </button>
         <YoutubeLogo />
         <span className={styles.countryCode}> GB </span>
