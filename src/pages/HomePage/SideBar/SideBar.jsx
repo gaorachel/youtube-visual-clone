@@ -29,10 +29,209 @@ import classNames from "classnames";
 import React, { useContext } from "react";
 import { SideBarContext } from "../HomePage";
 
-const link = "https://www.youtube.com/";
+const url = "https://www.youtube.com/";
 
 export function SideBar() {
   const [sidebarExpanded] = useContext(SideBarContext);
+
+  const mainSection1 = [
+    {
+      icon: <HomeIcon className={styles.navIcon} />,
+      text: "Home",
+      url,
+    },
+    {
+      icon: <ShortsLogo className={styles.navIcon} />,
+      text: "Shorts",
+      url,
+    },
+    {
+      icon: <SubscriptionIcon className={styles.navIcon} />,
+      text: "Subscriptions",
+      url,
+    },
+  ];
+
+  const mainSection2 = [
+    {
+      icon: <LibraryIcon className={styles.navIcon} />,
+      text: "Library",
+      url,
+    },
+    {
+      icon: <HistoryIcon className={styles.navIcon} />,
+      text: "History",
+      url,
+    },
+    {
+      icon: <YourVideoIcon className={styles.navIcon} />,
+      text: "Your videos",
+      url,
+    },
+    {
+      icon: <WatchLaterIcon className={styles.navIcon} />,
+      text: "Watch Later",
+      url,
+    },
+    {
+      icon: <LikedVideoIcon className={styles.navIcon} />,
+      text: "Liked videos",
+      url,
+    },
+    {
+      icon: <PlayListIcon className={styles.navIcon} />,
+      text: "Play list",
+      url,
+    },
+  ];
+
+  const exploreSection = [
+    {
+      icon: <TrendingIcon className={styles.navIcon} />,
+      text: "Trending",
+      url,
+    },
+    {
+      icon: <MusicIcon className={styles.navIcon} />,
+      text: "Music",
+      url,
+    },
+    {
+      icon: <MoviesAndShowsIcon className={styles.navIcon} />,
+      text: "Movies & Shows",
+      url,
+    },
+    {
+      icon: <LiveIcon className={styles.navIcon} />,
+      text: "Live",
+      url,
+    },
+    {
+      icon: <GamingIcon className={styles.navIcon} />,
+      text: "Gaming",
+      url,
+    },
+    {
+      icon: <NewsIcon className={styles.navIcon} />,
+      text: "News",
+      url,
+    },
+    {
+      icon: <SportIcon className={styles.navIcon} />,
+      text: "Sport",
+      url,
+    },
+    {
+      icon: <LearningIcon className={styles.navIcon} />,
+      text: "Learning",
+      url,
+    },
+    {
+      icon: <FashionAndBeautyIcon className={styles.navIcon} />,
+      text: "Fashion & beauty",
+      url,
+    },
+  ];
+
+  const moreFromYoutubeSection = [
+    {
+      icon: <YoutubePremiumIcon className={styles.navIcon} />,
+      text: "YouTube Premium",
+      url,
+    },
+    {
+      icon: <YoutubeStudioIcon className={styles.navIcon} />,
+      text: "YouTube Studio",
+      url,
+    },
+    {
+      icon: <YoutubeMusicIcon className={styles.navIcon} />,
+      text: "YouTube Music",
+      url,
+    },
+    {
+      icon: <YoutubeKidsIcon className={styles.navIcon} />,
+      text: "YouTube Kids",
+      url,
+    },
+  ];
+
+  const footerSection = [
+    {
+      icon: <SettingsIcon className={styles.navIcon} />,
+      text: "Setting",
+      url,
+    },
+    {
+      icon: <ShortsLogo className={styles.navIcon} />,
+      text: "Report history",
+      url,
+    },
+    {
+      icon: <HelpIcon className={styles.navIcon} />,
+      text: "Help",
+      url,
+    },
+    {
+      icon: <SendFeedbackIcon className={styles.navIcon} />,
+      text: "Send feedback",
+      url,
+    },
+  ];
+
+  const guildLinkPart1 = [
+    {
+      text: "About",
+      url,
+    },
+    {
+      text: "Press",
+      url,
+    },
+    {
+      text: "Copyright",
+      url,
+    },
+    {
+      text: "Contact us",
+      url,
+    },
+    {
+      text: "Creator",
+      url,
+    },
+    {
+      text: "Advertise",
+      url,
+    },
+    {
+      text: "Developers",
+      url,
+    },
+  ];
+
+  const guildLinkPart2 = [
+    {
+      text: "Term",
+      url,
+    },
+    {
+      text: "Privacy",
+      url,
+    },
+    {
+      text: "Policy & Safety",
+      url,
+    },
+    {
+      text: "How YouTube works",
+      url,
+    },
+    {
+      text: "Test new features",
+      url,
+    },
+  ];
 
   if (!sidebarExpanded)
     return (
@@ -47,226 +246,89 @@ export function SideBar() {
   return (
     <div className={styles.sideBar}>
       <div className={styles.navSection}>
-        <div className={styles.navBox}>
-          <HomeIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Home
-          </a>
-        </div>
-
-        <div className={styles.navBox}>
-          <ShortsLogo className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Shorts
-          </a>
-        </div>
-
-        <div className={styles.navBox}>
-          <SubscriptionIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Subscriptions
-          </a>
-        </div>
+        {mainSection1.map((item) => {
+          return (
+            <div className={styles.navBox} key={"expanded+" + item.text}>
+              {item.icon}
+              <a href={item.url} className={styles.navText}>
+                {item.text}
+              </a>
+            </div>
+          );
+        })}
       </div>
 
       <div className={styles.navSection}>
-        <div className={styles.navBox}>
-          <LibraryIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Library
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <HistoryIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            History
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <YourVideoIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Your Videos
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <WatchLaterIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Watch Later
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <PlayListIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Play List
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <LikedVideoIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Liked Videos
-          </a>
-        </div>
+        {mainSection2.map((item) => {
+          return (
+            <div className={styles.navBox} key={"expanded+" + item.text}>
+              {item.icon}
+              <a href={item.url} className={styles.navText}>
+                {item.text}
+              </a>
+            </div>
+          );
+        })}
       </div>
 
-      <div className={styles.navSection}>
-        <div className={styles.sectionHeader}>Subscriptions</div>
-      </div>
       <div className={styles.navSection}>
         <div className={styles.sectionHeader}>Explore</div>
-        <div className={styles.navBox}>
-          <TrendingIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Trending
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <MusicIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Music
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <MoviesAndShowsIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Movies & shows
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <LiveIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Live
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <GamingIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Gaming
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <NewsIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            News
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <SportIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Sport
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <LearningIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Learning
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <FashionAndBeautyIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Fashion & Beauty
-          </a>
-        </div>
+        {exploreSection.map((item) => {
+          return (
+            <div className={styles.navBox} key={"expanded+" + item.text}>
+              {item.icon}
+              <a href={item.url} className={styles.navText}>
+                {item.text}
+              </a>
+            </div>
+          );
+        })}
       </div>
 
       <div className={styles.navSection}>
         <div className={styles.sectionHeader}>More from YouTube</div>
-        <div className={styles.navBox}>
-          <YoutubePremiumIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            YouTube Premium
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <YoutubeStudioIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            YouTube Studio
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <YoutubeMusicIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            YouTube Music
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <YoutubeKidsIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            YouTube Kids
-          </a>
-        </div>
+        {moreFromYoutubeSection.map((item) => {
+          return (
+            <div className={styles.navBox} key={"expanded+" + item.text}>
+              {item.icon}
+              <a href={item.url} className={styles.navText}>
+                {item.text}
+              </a>
+            </div>
+          );
+        })}
       </div>
 
       <div className={styles.navSection}>
-        <div className={styles.navBox}>
-          <SettingsIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Settings
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <ReportHistoryIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Report History
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <HelpIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Help
-          </a>
-        </div>
-        <div className={styles.navBox}>
-          <SendFeedbackIcon className={styles.navIcon} />
-          <a href={link} className={styles.navText}>
-            Send Feedback
-          </a>
-        </div>
+        {footerSection.map((item) => {
+          return (
+            <div className={styles.navBox} key={"expanded+" + item.text}>
+              {item.icon}
+              <a href={item.url} className={styles.navText}>
+                {item.text}
+              </a>
+            </div>
+          );
+        })}
       </div>
 
       <div className={classNames(styles.navSection, styles.footerBox)}>
-        <a href="https://about.youtube/" className={styles.footerText}>
-          About
-        </a>
-        <a href="https://blog.youtube/" className={styles.footerText}>
-          Press
-        </a>
-        <a href="https://www.youtube.com/howyoutubeworks/policies/copyright/" className={styles.footerText}>
-          Copyright
-        </a>
-        <a href="https://www.youtube.com/t/contact_us/" className={styles.footerText}>
-          Contact Us
-        </a>
-        <a href="https://www.youtube.com/creators/" className={styles.footerText}>
-          Creator
-        </a>
-        <a href="https://www.youtube.com/ads/" className={styles.footerText}>
-          Advertise
-        </a>
-        <a href="https://developers.google.com/youtube" className={styles.footerText}>
-          Developers
-        </a>
+        {guildLinkPart1.map((item) => {
+          return (
+            <a href={item.url} className={styles.footerText} key={"expanded+" + item.text}>
+              {item.text}
+            </a>
+          );
+        })}
       </div>
-
       <div className={classNames(styles.navSection, styles.footerBox)}>
-        <a slot="" href="https://www.youtube.com/t/terms" className={styles.footerText}>
-          Terms
-        </a>
-        <a href="https://policies.google.com/privacy?hl=en-GB" className={styles.footerText}>
-          Privacy
-        </a>
-        <a href="https://www.youtube.com/howyoutubeworks/policies/community-guidelines/" className={styles.footerText}>
-          Policy & Safety
-        </a>
-        <a
-          href="https://www.youtube.com/howyoutubeworks/?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen"
-          className={styles.footerText}
-        >
-          How YouTube works
-        </a>
-        <a href="https://www.youtube.com/new" className={styles.footerText}>
-          Test new features
-        </a>
+        {guildLinkPart2.map((item) => {
+          return (
+            <a href={item.url} className={styles.footerText} key={"expanded+" + item.text}>
+              {item.text}
+            </a>
+          );
+        })}
         <div className={styles.copyrightBox}>
           <div className={styles.copyright}>© 2023 Google LLC (fake)</div>
         </div>
