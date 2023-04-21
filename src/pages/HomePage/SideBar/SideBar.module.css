@@ -1,3 +1,42 @@
+.sideBarCollapsed {
+  display: flex;
+  flex-direction: column;
+  width: 65px;
+  max-height: 100lvh;
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.collapsedBox {
+  border: none;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 5px;
+}
+
+.collapsedBox:hover {
+  background-color: var(--light-hover-gray);
+}
+
+.collapsedIcon {
+  display: flex;
+  flex-direction: column;
+  height: 24px;
+  width: 24px;
+  padding: 16px 16px 2.5px 14px;
+}
+
+.collapsedText {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 5px 5px 5px 4px;
+  color: var(--text-white);
+}
+
 .sideBar {
   display: flex;
   flex-direction: column;
@@ -6,19 +45,10 @@
   overflow-y: scroll;
 }
 
-.sideBarCollapsed {
-  display: flex;
-  flex-direction: column;
-  width: 64px;
-  max-height: 100lvh;
-  background-color: red;
-  font-size: 10px;
-}
-
 .navSection {
   max-height: fit-content;
   border-bottom: 1px solid var(--lighter-gray);
-  padding: 12px 12px;
+  padding: 11px 12px;
 }
 
 .sectionHeader {
@@ -34,10 +64,10 @@
   justify-content: flex-start;
   align-items: center;
   border-radius: 12px;
-  padding: 12px;
-  gap: 12px;
+  padding: 10.5px;
+  gap: 14px;
   width: 200px;
-  height: 24px;
+  height: 20px;
 }
 
 .navBox:hover {
@@ -45,7 +75,7 @@
 }
 
 .navIcon {
-  margin-right: 12px;
+  margin-right: 10px;
   width: 24px;
   height: 24px;
 }
