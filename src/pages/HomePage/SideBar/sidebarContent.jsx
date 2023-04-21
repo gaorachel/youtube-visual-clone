@@ -173,7 +173,7 @@ export const footerSection = [
   },
 ];
 
-export const guildLinkPart1 = [
+export const guideLinkPart1 = [
   {
     text: "About",
     url,
@@ -204,7 +204,7 @@ export const guildLinkPart1 = [
   },
 ];
 
-export const guildLinkPart2 = [
+export const guideLinkPart2 = [
   {
     text: "Term",
     url,

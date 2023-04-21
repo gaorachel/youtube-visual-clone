@@ -8,8 +8,8 @@ import {
   exploreSection,
   moreFromYoutubeSection,
   footerSection,
-  guildLinkPart1,
-  guildLinkPart2,
+  guideLinkPart1,
+  guideLinkPart2,
   collapsedSidebar,
 } from "./sidebarContent";
 
@@ -102,7 +102,7 @@ export function SideBar() {
       </div>
 
       <div className={classNames(styles.navSection, styles.footerBox)}>
-        {guildLinkPart1.map((item) => {
+        {guideLinkPart1.map((item) => {
           return (
             <a href={item.url} className={styles.footerText} key={"expanded+" + item.text}>
               {item.text}
@@ -111,7 +111,7 @@ export function SideBar() {
         })}
       </div>
       <div className={classNames(styles.navSection, styles.footerBox)}>
-        {guildLinkPart2.map((item) => {
+        {guideLinkPart2.map((item) => {
           return (
             <a href={item.url} className={styles.footerText} key={"expanded+" + item.text}>
               {item.text}
