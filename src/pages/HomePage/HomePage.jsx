@@ -6,7 +6,6 @@ export const SideBarContext = createContext(null);
 
 export function HomePage() {
   const [sidebarExpanded, setSidebarExpanded] = useState(true);
-  // const SideBarContext = useContext(SideBarContext);
 
   return (
     <div>
