@@ -1,0 +1,24 @@
+.chipBarWithButton {
+  display: flex;
+  min-width: 50lvw;
+  height: 56px;
+  align-items: center;
+}
+
+.chipBar {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.chipBar::-webkit-scrollbar {
+  display: none;
+}
+
+.homePageChip {
+  margin: 5px;
+}
+
+.chipBarButton {
+  width: 40px;
+  height: 40px;
+}

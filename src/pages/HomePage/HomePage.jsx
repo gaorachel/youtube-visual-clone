@@ -1,6 +1,8 @@
+import React, { createContext, useState } from "react";
 import { TopBar } from "components/TopBar/TopBar";
 import { SideBar } from "./SideBar/SideBar";
-import React, { createContext, useContext, useState } from "react";
+import { FeedFilterChipBar } from "./Content/HomePageChipBar/HomePageChipBar";
+import styles from "./HomePage.module.css";
 
 export const SideBarContext = createContext(null);
 
@@ -11,7 +13,10 @@ export function HomePage() {
     <div>
       <SideBarContext.Provider value={[sidebarExpanded, setSidebarExpanded]}>
         <TopBar />
-        <SideBar />
+        <div className={styles.sideBarAndContentContainer}>
+          <SideBar />
+          <FeedFilterChipBar />
+        </div>
       </SideBarContext.Provider>
     </div>
   );
