@@ -16,6 +16,11 @@
   width: 520px;
   height: 38px;
   font-size: medium;
+  color: white;
+}
+
+.searchBar:focus {
+  outline: 1px #005fcc solid;
 }
 
 .searchIcon {
