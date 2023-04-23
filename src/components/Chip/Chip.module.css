@@ -6,6 +6,8 @@
   padding: 8.8px 12px;
   font-size: 14px;
   align-self: center;
+  color: var(--text-white);
+  cursor: pointer;
 }
 
 .chip:hover {
