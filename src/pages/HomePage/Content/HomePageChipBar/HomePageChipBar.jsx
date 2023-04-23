@@ -1,13 +1,13 @@
 import { Chip } from "components/Chip/Chip";
 import { FullRoundedButton } from "components/Button/Button";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import React, { useRef, useState } from "react";
+import React from "react";
+import { useScrollerH } from "hooks/use-scroller-h";
 import styles from "./HomePageChipBar.module.css";
 
 export function FeedFilterChipBar() {
-  const ref = useRef(null);
-  const [scrollX, setScrollX] = useState(0);
   const moveDistance = 200;
+  const { ref, scrollX, handleClickBack, handleClickForward, handleScroll } = useScrollerH(moveDistance);
 
   const chipArr = [
     "All",
@@ -40,32 +40,20 @@ export function FeedFilterChipBar() {
     <div className={styles.chipBarWithButton}>
       <div>
         <FullRoundedButton
-          onClick={() => {
-            setScrollX(scrollX - moveDistance);
-            ref.current.scrollLeft -= moveDistance;
-          }}
+          onClick={() => handleClickBack(moveDistance)}
           className={scrollX > 0 ? styles.chipBarButton : styles.chipBarButtonHidden}
           buttonText={<IoIosArrowBack size="16px" />}
         />
       </div>
-      <div
-        className={styles.chipBar}
-        ref={ref}
-        onScroll={(el) => {
-          setScrollX(el.target.scrollLeft);
-        }}
-      >
+      <div className={styles.chipBar} ref={ref} onScroll={(el) => handleScroll(el)}>
         {chipArr.map((chip) => {
           return <Chip className={styles.homePageChip} chipText={chip} key={chip} />;
         })}
       </div>
       <div>
         <FullRoundedButton
-          onClick={() => {
-            setScrollX(scrollX + moveDistance);
-            ref.current.scrollLeft += moveDistance;
-          }}
-          className={scrollX < ref.current?.clientWidth ?? 0 - 50 ? styles.chipBarButton : styles.chipBarButtonHidden}
+          onClick={() => handleClickForward(moveDistance)}
+          className={scrollX > ref.current?.clientWidth ?? 0 ? styles.chipBarButtonHidden : styles.chipBarButton}
           buttonText={<IoIosArrowForward size="16px" />}
         />
       </div>
