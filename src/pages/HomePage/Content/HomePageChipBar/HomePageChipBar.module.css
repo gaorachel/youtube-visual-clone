@@ -22,3 +22,9 @@
   width: 40px;
   height: 40px;
 }
+
+.chipBarButtonHidden {
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+}
