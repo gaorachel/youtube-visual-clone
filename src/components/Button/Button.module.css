@@ -6,9 +6,9 @@
 }
 
 .fullRoundedButton:hover {
-  background-color: var(--lighter-gray);
+  background-color: var(--dark-gray-3);
 }
 
 .imgShadow {
-  background-color: #272727;
+  background-color: var(--dark-gray-2);
 }
