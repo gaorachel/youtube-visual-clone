@@ -26,6 +26,28 @@ export function VideoPreviews() {
       <VideoCard />
       <VideoCard />
       <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
+      <VideoCard />
     </div>
   );
 }
