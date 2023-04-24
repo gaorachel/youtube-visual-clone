@@ -1,6 +1,5 @@
 .chipBarWithButton {
   display: flex;
-  min-width: 50lvw;
   height: 56px;
   align-items: center;
 }

@@ -5,7 +5,7 @@ import React from "react";
 import { useHorizontalScroll } from "hooks/use-horizontal-scroll";
 import styles from "./HomePageChipBar.module.css";
 
-export function FeedFilterChipBar() {
+export function ChipBar() {
   const moveDistance = 200;
   const { ref, scrollX, handleClickBack, handleClickForward, handleScroll } = useHorizontalScroll(moveDistance);
 

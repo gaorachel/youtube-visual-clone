@@ -1,3 +1,9 @@
 .sideBarAndContentContainer {
   display: flex;
 }
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
