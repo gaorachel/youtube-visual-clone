@@ -1,0 +1,46 @@
+.video {
+  background-color: var(--dark-hover-gray);
+  width: 350px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.videoInfo {
+  display: flex;
+  padding: 10px 10px 10px 0px;
+  gap: 15px;
+}
+
+.videoDesc {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.title {
+  font-size: 25;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.avatar {
+  background-color: var(--text-disabled);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.subInfo {
+  font-size: 13;
+  color: var(--text-secondary);
+}
+
+.moreOptionButton {
+  cursor: pointer;
+  opacity: 0;
+}
+
+.moreOptionButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
