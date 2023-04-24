@@ -1,14 +1,14 @@
 .chip {
   border: none;
   border-radius: 8px;
-  background-color: var(--dark-hover-gray);
+  background-color: var(--dark-gray-1);
   min-width: fit-content;
   padding: 8.8px 12px;
   font-size: 14px;
-  color: var(--text-white);
+  color: white;
   cursor: pointer;
 }
 
 .chip:hover {
-  background-color: var(--lighter-gray);
+  background-color: var(--dark-gray-4);
 }

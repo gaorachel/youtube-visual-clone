@@ -12,13 +12,13 @@
 
 .countryCode {
   align-self: self-start;
-  color: #aaaaaa;
+  color: var(--gray-1);
   font-size: 10px;
   margin-left: -12px;
 }
 
 .topBarIcon {
-  fill: "#FFFFFF";
+  fill: white;
   width: 24px;
   height: 24px;
 }
@@ -32,20 +32,20 @@
 }
 
 .topBarButton:hover {
-  background-color: var(--dark-hover-gray);
+  background-color: var(--dark-gray-1);
 }
 
 .micButton {
-  background-color: #181818;
+  background-color: var(--black-3);
   margin-left: -8.5px;
 }
 
 .micButton:hover {
-  background-color: var(--light-hover-gray);
+  background-color: var(--dark-gray-2);
 }
 
 .avatarButton {
-  background-color: #7e57c2;
+  background-color: var(--purple-1);
   width: 32px;
   height: 32px;
   color: white;

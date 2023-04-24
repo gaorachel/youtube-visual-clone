@@ -16,7 +16,7 @@
 }
 
 .collapsedBox:hover {
-  background-color: var(--light-hover-gray);
+  background-color: var(--dark-gray-2);
 }
 
 .collapsedIcon {
@@ -34,7 +34,7 @@
   align-items: center;
   justify-items: center;
   padding: 5px 5px 5px 4px;
-  color: var(--text-white);
+  color: white;
 }
 
 .sideBar {
@@ -42,13 +42,12 @@
   flex-direction: column;
   min-width: 240px;
   max-width: 240px;
-  max-height: 95lvh;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 .navSection {
   max-height: fit-content;
-  border-bottom: 1px solid var(--lighter-gray);
+  border-bottom: 1px solid var(--dark-gray-4);
   padding: 11px 12px;
 }
 
@@ -72,7 +71,7 @@
 }
 
 .navBox:hover {
-  background-color: var(--light-hover-gray);
+  background-color: var(--dark-gray-2);
 }
 
 .navIcon {
@@ -83,7 +82,7 @@
 
 .navText {
   text-decoration: none;
-  color: var(--text-white);
+  color: white;
   font-size: 14px;
 }
 
@@ -98,7 +97,7 @@
 .footerText {
   text-decoration: none;
   margin-right: 8px;
-  color: var(--text-secondary);
+  color: var(--gray-1);
   font-size: 0.8rem;
   font-weight: 500;
 }
@@ -109,7 +108,7 @@
 
 .copyright {
   display: inline;
-  color: var(--text-disabled);
+  color: var(--white-2);
   font-size: 0.8rem;
   padding: auto;
   margin: 12px 0px 12px 0px;

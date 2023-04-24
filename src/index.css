@@ -5,26 +5,24 @@
 }
 
 :root {
-  --bg-black: #0f0f0f;
-  --inactive-bg-black: #070707;
-  --dark-hover-gray: #222222;
-  --light-hover-gray: #272727;
-  --lighter-gray: #3f3f3f;
-  --super-light-gray: #ccc;
-  --text-white: #fff;
-  --text-secondary: #aaa;
-  --text-disabled: #717171;
+  --black-2: #070707;
+  --black-3: #181818;
+  --dark-gray-1: #222222;
+  --dark-gray-2: #272727;
+  --dark-gray-3: #333333;
+  --dark-gray-4: #3f3f3f;
+  --gray-2: #717171;
+  --gray-1: #aaa;
+  --white-2: #ccc;
+  --blue-1: #005fcc;
+  --purple-1: #7e57c2;
 }
 
 body {
-  background-color: var(--bg-black);
-  color: var(--text-white);
+  background-color: var(--black-2);
+  color: white;
 }
 
 .style-scope {
   fill: white;
-}
-
-.ty-icon {
-  /* place holding */
 }
