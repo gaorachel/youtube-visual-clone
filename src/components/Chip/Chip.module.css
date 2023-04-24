@@ -1,0 +1,14 @@
+.chip {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--dark-hover-gray);
+  min-width: fit-content;
+  padding: 8.8px 12px;
+  font-size: 14px;
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+.chip:hover {
+  background-color: var(--lighter-gray);
+}

@@ -1,15 +1,14 @@
-.button {
-  background-color: black;
+.fullRoundedButton {
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
   color: white;
 }
 
-.full-rounded {
-  border-radius: 50%;
-}
-.quater-rounded {
-  border-radius: 25%;
+.fullRoundedButton:hover {
+  background-color: var(--lighter-gray);
 }
 
-.img-shadow {
+.imgShadow {
   background-color: #272727;
 }
