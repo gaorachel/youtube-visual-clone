@@ -1,6 +1,10 @@
 import { useRef, useState } from "react";
 
-export function useScrollerH(moveDistance) {
+/**
+ * Allows horizontal scrolling by moveDistance amount.
+ * @param {number} moveDistance
+ */
+export function useHorizontalScroll(moveDistance) {
   const ref = useRef(null);
   const [scrollX, setScrollX] = useState(0);
 

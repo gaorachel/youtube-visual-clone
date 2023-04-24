@@ -2,12 +2,12 @@ import { Chip } from "components/Chip/Chip";
 import { FullRoundedButton } from "components/Button/Button";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import React from "react";
-import { useScrollerH } from "hooks/use-scroller-h";
+import { useHorizontalScroll } from "hooks/use-horizontal-scroll";
 import styles from "./HomePageChipBar.module.css";
 
 export function FeedFilterChipBar() {
   const moveDistance = 200;
-  const { ref, scrollX, handleClickBack, handleClickForward, handleScroll } = useScrollerH(moveDistance);
+  const { ref, scrollX, handleClickBack, handleClickForward, handleScroll } = useHorizontalScroll(moveDistance);
 
   const chipArr = [
     "All",
@@ -41,21 +41,29 @@ export function FeedFilterChipBar() {
       <div>
         <FullRoundedButton
           onClick={() => handleClickBack(moveDistance)}
-          className={scrollX > 0 ? styles.chipBarButton : styles.chipBarButtonHidden}
-          buttonText={<IoIosArrowBack size="16px" />}
-        />
+          className={styles.chipBarButton}
+          style={{ visibility: scrollX === 0 ? "hidden" : "visible" }}
+        >
+          <IoIosArrowBack size="16px" />
+        </FullRoundedButton>
       </div>
-      <div className={styles.chipBar} ref={ref} onScroll={(el) => handleScroll(el)}>
+      <div className={styles.chipBar} ref={ref} onScroll={(e) => handleScroll(e)}>
         {chipArr.map((chip) => {
-          return <Chip className={styles.homePageChip} chipText={chip} key={chip} />;
+          return (
+            <Chip className={styles.homePageChip} key={chip}>
+              {chip}
+            </Chip>
+          );
         })}
       </div>
       <div>
         <FullRoundedButton
           onClick={() => handleClickForward(moveDistance)}
-          className={scrollX > ref.current?.clientWidth ?? 0 ? styles.chipBarButtonHidden : styles.chipBarButton}
-          buttonText={<IoIosArrowForward size="16px" />}
-        />
+          className={styles.chipBarButton}
+          style={{ visibility: scrollX > ref.current?.clientWidth ?? 0 ? "hidden" : "visible" }}
+        >
+          <IoIosArrowForward size="16px" />
+        </FullRoundedButton>
       </div>
     </div>
   );

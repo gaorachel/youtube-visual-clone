@@ -2,10 +2,10 @@ import React from "react";
 import classNames from "classnames";
 import styles from "./Button.module.css";
 
-export function FullRoundedButton({ onClick, className, buttonText }) {
+export function FullRoundedButton({ children, ...props }) {
   return (
-    <button onClick={onClick} className={classNames(styles.fullRoundedButton, className)}>
-      {buttonText}
+    <button {...props} className={classNames(styles.fullRoundedButton, props.className)}>
+      {children}
     </button>
   );
 }
