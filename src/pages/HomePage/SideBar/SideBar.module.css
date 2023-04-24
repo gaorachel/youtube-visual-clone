@@ -42,8 +42,7 @@
   flex-direction: column;
   min-width: 240px;
   max-width: 240px;
-  max-height: 95lvh;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 .navSection {
