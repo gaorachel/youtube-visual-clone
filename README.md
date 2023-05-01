@@ -2,5 +2,5 @@
 
 This is a youtube clone for practising my css skills. 
 
-https://youtube-visual-clone.vercel.app/
+https://youtube-visual-clone-rg.vercel.app/
 
